@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jason Beveridge Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="index.html" class="nav__link"><img src="img/logo.png" alt=""></a>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                A clasic style<strong>Calculator</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Created with React</p>
+            <img src="img/calculator.jpg" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <div>
+                <ul class="social-list tech-list">
+                    <li class="social-list__item">
+                        <i class="fab fa-react"></i>
+                    </li>
+                    <li class="social-list__item">
+                         <i class="fab fa-html5"></i>
+                    </li>
+                    <li class="social-list__item">
+                        <i class="fab fa-css3-alt"></i>
+                    </li>
+                </ul>
+
+            </div>
+            <p>
+                <a class="social-list__link" href="https://github.com/Bevo-byte/react-calculator">
+                    <i class="fab fa-github"></i> View open source code on Github
+                </a>
+            </p>
+            <p>
+                <a class="social-list__link" href="https://sheltered-temple-41576.herokuapp.com/" target="_blank"> 
+                    <i class="fas fa-gamepad"></i> Demo of app - hosted on Heroku
+                </a>
+            </p>       
+            <p>This was designed as a practice project when learning React. Can you find the easter egg? ;)</p>
+            <img src="img/calc.PNG" alt="">
+            <p>It was created to test React.js skills, utilizing core concepts such as state, lifecycle methods, and handling user interaction.</p>
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:emailbevo@gmail.com" class="footer__link">emailbevo@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="http://dribbble.com">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
