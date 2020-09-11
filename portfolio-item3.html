@@ -1,69 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><link rel="stylesheet" href="normalize.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jason Beveridge Portfolio Website</title>
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <div id="header-placeholder">
-        </div>
-        <section class="intro">
-            <h1 class="section__title section__title--intro">
-                A retro game of <strong>Pacman</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">Created with Vanilla Javascript</p>
-            <img src="img/pac.jpg" alt="" class="intro__img">
-        </section>
-        
-        <div class="portfolio-item-individual">
-            <div>
-                <ul class="social-list tech-list">
-                    <li class="social-list__item">
-                        <i class="fab fa-js-square"></i>                   
-                    </li>
-                    <li class="social-list__item">
-                         <i class="fab fa-html5"></i>
-                    </li>
-                    <li class="social-list__item">
-                        <i class="fab fa-css3-alt"></i>
-                    </li>
-                </ul>
 
-            </div>
-            <p>
-                <a class="social-list__link" href="https://github.com/anami-sf/pac-man">
-                    <i class="fab fa-github"></i> View open source code on Github
-                </a>
-            </p>
+<head>
+    <link rel="stylesheet" href="normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason Beveridge Portfolio Website</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="header-placeholder">
+    </div>
+    <section class="intro">
+        <h1 class="section__title section__title--intro">
+            A retro game of <strong>Pacman</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Created with Vanilla Javascript</p>
+        <img src="img/pac.jpg" alt="" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+        <div>
+            <ul class="social-list tech-list">
+                <li class="social-list__item">
+                    <i class="fab fa-js-square"></i>
+                </li>
+                <li class="social-list__item">
+                    <i class="fab fa-html5"></i>
+                </li>
+                <li class="social-list__item">
+                    <i class="fab fa-css3-alt"></i>
+                </li>
+            </ul>
+
+        </div>
+        <p>
+            <a class="social-list__link" href="https://github.com/anami-sf/pac-man">
+                <i class="fab fa-github"></i> View open source code on Github
+            </a>
+        </p>
         <!--
             <p>
                 <a class="social-list__link" href="" target="_blank"> 
                     <i class="fas fa-gamepad"></i> Demo of app - hosted on Heroku
                 </a>
             </p>   
-        -->    
-            <p>This was designed as a vanilla javascript challenge to design a retro style pacman game.</p>
-            <img src="img/pacman.PNG" alt="">
-            <p>It was based on the original concept by <a href="https://twitter.com/ania_kubow"><i class="fab fa-twitter"></i> Ania Kubow</a>. 
-                I built on this along with <a href="https://github.com/anami-sf"><i class="fab fa-github"></i> Anami</a> and added more in depth styling, advanced functionality and features</p>
-        </div>
-        
-        <!-- Footer -->
-        <div id="footer-placeholder">
-        </div>  
-        
-        <script src="js/index.js"></script>
-        <script>
-            $(function(){
-              $("#header-placeholder").load("header.html");
-              $("#footer-placeholder").load("footer.html");
-            });
-        </script>
-    </body>
+        -->
+        <p>This was designed as a vanilla javascript challenge to design a retro style pacman game.</p>
+        <img src="img/pacman.PNG" alt="">
+        <p>It was based on the original concept by <a href="https://twitter.com/ania_kubow"><i
+                    class="fab fa-twitter"></i> Ania Kubow</a>.
+            I built on this along with <a href="https://github.com/anami-sf"><i class="fab fa-github"></i> Anami</a> and
+            added more in depth styling, advanced functionality and features</p>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-placeholder">
+    </div>
+
+    <script>
+        $(function () {
+            $("#header-placeholder").load("header.html");
+            $("#footer-placeholder").load("footer.html");
+        });
+        $(window).on("load", function () {
+            $.getScript("js/index.js");
+        });
+    </script>
+</body>
+
 </html>
