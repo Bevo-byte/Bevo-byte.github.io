@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason Beveridge Portfolio Website</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div id="header-placeholder">
+    </div>
+    <section class="intro">
+        <h1 class="section__title section__title--intro">
+            A whimsical <strong>Plant App</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Created with React</p>
+        <img src="img/portfolio4.jpg" alt="" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+        <div>
+            <ul class="social-list tech-list">
+                <li class="social-list__item">
+                    <i class="fab fa-react"></i>
+                </li>
+                <li class="social-list__item">
+                    <i class="fab fa-html5"></i>
+                </li>
+                <li class="social-list__item">
+                    <i class="fab fa-css3-alt"></i>
+                </li>
+            </ul>
+
+        </div>
+        <p>
+            <a class="social-list__link" href="https://github.com/Bevo-byte/plants">
+                <i class="fab fa-github"></i> View open source code on Github
+            </a>
+        </p>
+        <p>
+            <a class="social-list__link" href="https://gentle-depths-06456.herokuapp.com/" target="_blank">
+                <i class="fas fa-gamepad"></i> Demo of app
+            </a>
+        </p>
+        <p>A list of plants with the ability to filter on multiple fields and toggle their state</p>
+        <img src="img/plant.png" alt="">
+        <p>This was designed for a job application in 24 hours. It's built on React utilizing Typescript</p>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-placeholder">
+    </div>
+
+    <script>
+        $(function () {
+            $("#header-placeholder").load("header.html");
+            $("#footer-placeholder").load("footer.html");
+        });
+        $(window).on("load", function () {
+            $.getScript("js/index.js");
+        });
+    </script>
+</body>
+
+</html>
